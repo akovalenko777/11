@@ -1,0 +1,50 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.wrap {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.card_pic {
+  margin-bottom: 10px;
+}
+.card_pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card_descr {
+  font-size: 13px;
+}
